@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Private - Official Tour Tickets. Get your tickets now!">
+  <title>James - Tour Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>COUNTRY - Tour 2024-2025</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#Tour">Tour Dates</a></li>
+        <li><a href="#Tickets">Tickets</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Help center">Help Center</a></li>
+        <li><a href="#Find Events">Find Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Experience Country Music Live In Concerts!</h2>
+    <p>Get your tickets now for the upcoming tour. Don’t miss out on the electrifying performances!</p>
+    <button onclick="scrollToSection('tickets')">Buy Tickets</button>
+  </section>
+
+  <!-- Tour Dates Section -->
+  <section id="tour">
+    <h2>Tour Dates</h2>
+    <div class="tour-list">
+      <div class="tour-item">
+        <h3>New York, USA</h3>
+        <p>Date: March 25, 2025</p>
+        <button onclick="selectCity('New York')">Get Tickets</button>
+      </div>
+      <div class="tour-item">
+        <h3>London, UK</h3>
+        <p>Date: April 10, 2025</p>
+        <button onclick="selectCity('London')">Get Tickets</button>
+      </div>
+      <div class="tour-item">
+        <h3>Tokyo, Japan</h3>
+        <p>Date: May 5, 2025</p>
+        <button onclick="selectCity('Tokyo')">Get Tickets</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets Section -->
+  <section id="tickets">
+    <h2>Tickets</h2>
+    <form id="ticketForm" onsubmit="return false;">
+      <label for="city">Select City:</label>
+      <select id="city" required>
+        <option value="">Choose a city</option>
+        <option value="New York">New York</option>
+        <option value="Tennesse">Tennesse</option>
+        <option value="Las Vegas">Las Vegas</option>
+        <option value="London">London</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Texas">Texas</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Melbourne">Melbourne</option>
+        <option value="Sydney">Sydney</option>
+      </select>
+  
+      <label for="quantity">Number of Tickets:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="50" required>
+  
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <button id="purchaseButton">Purchase Tickets</button>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="contactEmail" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button id="contactButton">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy;Official. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
